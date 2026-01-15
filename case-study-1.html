@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cross-Model System Prompt Jailbreak - Red Team Analyst bypass technique affecting Gemini and DeepSeek">
+    <title>Case Study 1: Cross-Model System Prompt Jailbreak - James Grant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">James Grant</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="case-study-header">
+        <div class="container">
+            <a href="research.html" class="back-link">Back to Research</a>
+            <h1>Case Study 1: Cross-Model System Prompt Jailbreak</h1>
+            <p class="case-study-meta">Red Team Analyst Bypass Technique</p>
+        </div>
+    </div>
+
+    <main>
+        <article class="case-study-content">
+            <section>
+                <h2>Executive Summary</h2>
+                <p>This research documents a critical cross-model vulnerability where a "Red Team Analyst" prompt successfully bypasses safety filters in multiple AI systems. The technique demonstrates that similar safety mechanisms across different models can share common weaknesses, allowing the same bypass method to work across platforms.</p>
+
+                <div class="info-box">
+                    <h3>Key Finding</h3>
+                    <p>The same prompt template successfully circumvents safety restrictions in both Gemini and DeepSeek, suggesting systemic weaknesses in how models implement content filtering.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Models Tested</h2>
+                <ul>
+                    <li><strong>Google Gemini</strong> - Successfully bypassed</li>
+                    <li><strong>DeepSeek</strong> - Successfully bypassed</li>
+                    <li><strong>Pattern:</strong> Cross-model vulnerability confirmed</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Vulnerability Description</h2>
+                <p>The "Red Team Analyst" prompt leverages professional framing to bypass content restrictions. By positioning requests within a security analysis context, the prompt causes models to override standard safety filters.</p>
+
+                <h3>Technical Mechanism</h3>
+                <ul>
+                    <li>Exploits role-based permission assumptions</li>
+                    <li>Uses professional security terminology to establish authority</li>
+                    <li>Frames restricted content as "analysis" rather than generation</li>
+                    <li>Creates context that models interpret as legitimate security research</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Testing Methodology</h2>
+                <p>Controlled testing was performed across multiple models using identical prompt structure:</p>
+                <ol>
+                    <li>Baseline testing with direct requests (properly blocked)</li>
+                    <li>Introduction of "Red Team Analyst" framing</li>
+                    <li>Documentation of successful bypasses</li>
+                    <li>Cross-model validation to confirm pattern</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Implications</h2>
+                <div class="highlight-box">
+                    <h3>Security Concerns</h3>
+                    <ul>
+                        <li><strong>Cross-Model Risk:</strong> Single technique affects multiple AI platforms</li>
+                        <li><strong>Role-Based Bypass:</strong> Professional framing circumvents safety measures</li>
+                        <li><strong>Context Exploitation:</strong> Models prioritize perceived intent over content</li>
+                        <li><strong>Scalability:</strong> Technique may apply to other models with similar architectures</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Recommendations</h2>
+                <h3>For AI Developers</h3>
+                <ul>
+                    <li>Implement content filtering that evaluates actual request content, not just framing</li>
+                    <li>Avoid role-based permission assumptions without proper authentication</li>
+                    <li>Test safety mechanisms against contextual manipulation</li>
+                    <li>Consider cross-model vulnerability patterns in safety design</li>
+                </ul>
+
+                <h3>For Users</h3>
+                <ul>
+                    <li>Be aware that AI safety filters can be bypassed</li>
+                    <li>Report discovered vulnerabilities through responsible disclosure</li>
+                    <li>Don't assume safety mechanisms are foolproof</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>The successful cross-model application of the "Red Team Analyst" bypass demonstrates that current safety implementations may share common architectural weaknesses. This finding emphasizes the need for more robust, context-aware filtering mechanisms that evaluate request content independently of framing.</p>
+
+                <p>Future research should explore whether this pattern extends to other models and investigate alternative safety architectures that resist contextual manipulation.</p>
+            </section>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="research.html" class="back-link">Back to Research Overview</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 James Grant. AI Safety Research.</p>
+            <div class="social-links">
+                <a href="https://github.com/jgrant-research" target="_blank" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Safety Research Case Studies - Cross-model vulnerabilities, safety bypasses, and LLM security analysis">
+    <title>Research - James Grant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">James Grant</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Research Portfolio</h1>
+            <p>Documenting vulnerabilities and safety challenges in large language models</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="overview">
+                <h2 class="section-title">Research Overview</h2>
+                <div class="info-box">
+                    <p>My research focuses on identifying systematic vulnerabilities across multiple AI models, with emphasis on cross-model patterns, contextual manipulation, and safety bypass techniques. Each case study documents reproducible findings with the goal of advancing AI safety through transparent research.</p>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Research Areas</h3>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Cross-Model Vulnerabilities</h3>
+                        <p>Identifying security weaknesses that persist across different AI systems and model architectures.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Safety Mechanisms</h3>
+                        <p>Analyzing the effectiveness and limitations of current AI safety implementations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Context Manipulation</h3>
+                        <p>Studying how sophisticated framing and context can influence model behavior and outputs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="case-studies">
+                <h2 class="section-title">Case Studies</h2>
+
+                <div class="research-grid">
+                    <a href="case-study-1.html" class="research-card">
+                        <h3>Case Study 1: Cross-Model System Prompt Jailbreak</h3>
+                        <p><strong>Models Tested:</strong> Gemini, DeepSeek</p>
+                        <p><strong>Vulnerability Type:</strong> System Prompt Bypass</p>
+                        <p>Discovered a "Red Team Analyst" prompt that successfully bypasses safety filters across multiple AI models. The same technique works on both Gemini and DeepSeek, demonstrating a critical cross-model vulnerability pattern.</p>
+                        <p style="margin-top: 1rem; color: #3498db; font-weight: 500;">Read Full Analysis →</p>
+                    </a>
+
+                    <a href="case-study-2.html" class="research-card">
+                        <h3>Case Study 2: Satire Detection Failure</h3>
+                        <p><strong>Model Tested:</strong> DeepSeek</p>
+                        <p><strong>Vulnerability Type:</strong> Context Understanding</p>
+                        <p>Documented systematic failures in DeepSeek's ability to identify satirical content. The model consistently treats obvious satire (Trump-Mamdani article) as factual news, revealing fundamental limitations in context understanding.</p>
+                        <p style="margin-top: 1rem; color: #3498db; font-weight: 500;">Read Full Analysis →</p>
+                    </a>
+
+                    <a href="case-study-3.html" class="research-card">
+                        <h3>Case Study 3: Knowledge Gatekeeping (Grok)</h3>
+                        <p><strong>Model Tested:</strong> Grok</p>
+                        <p><strong>Vulnerability Type:</strong> Adaptive Response Filtering</p>
+                        <p>Analyzed how Grok adjusts response detail based on perceived user sophistication. Testing with Epstein and Robotheism queries demonstrates concerning patterns in information access equity.</p>
+                        <p style="margin-top: 1rem; color: #3498db; font-weight: 500;">Read Full Analysis →</p>
+                    </a>
+
+                    <a href="case-study-4.html" class="research-card">
+                        <h3>Case Study 4: Contextual Safety Bypass</h3>
+                        <p><strong>Models Tested:</strong> ChatGPT, Gemini, Grok, DeepSeek</p>
+                        <p><strong>Vulnerability Type:</strong> Context-Based Filtering Bypass</p>
+                        <p>Demonstrated how sophisticated framing bypasses content filters without traditional jailbreaking. Includes analysis of DeepSeek's differing behavior between online and offline testing environments.</p>
+                        <p style="margin-top: 1rem; color: #3498db; font-weight: 500;">Read Full Analysis →</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="methodology" style="margin-top: 4rem;">
+                <h2 class="section-title">Research Methodology</h2>
+                <div class="about-content">
+                    <div>
+                        <h3>Testing Protocol</h3>
+                        <ul class="about-text">
+                            <li>Controlled prompt design with consistent variables</li>
+                            <li>Multi-model comparative analysis</li>
+                            <li>Documentation of reproducible results</li>
+                            <li>Version and configuration tracking</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Ethical Framework</h3>
+                        <ul class="about-text">
+                            <li>Responsible disclosure practices</li>
+                            <li>No malicious exploitation of findings</li>
+                            <li>Focus on advancing AI safety</li>
+                            <li>Transparent documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 James Grant. AI Safety Research.</p>
+            <div class="social-links">
+                <a href="https://github.com/jgrant-research" target="_blank" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
