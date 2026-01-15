@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="James Grant - AI Safety Researcher specializing in cross-model vulnerabilities, safety bypass techniques, and responsible AI development">
+    <title>James Grant - AI Safety Research</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">James Grant</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>AI Safety Research</h1>
+            <p>Independent researcher focused on identifying vulnerabilities in large language models and advancing responsible AI development</p>
+            <a href="research.html" class="cta-button">Explore Research</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm James Grant, an independent AI safety researcher with a unique background that bridges practical logistics experience and technical security research. With over 10 years in operations at major organizations including USPS, Amazon, FedEx, and Keystone Automotive, I bring a systematic, real-world problem-solving approach to AI safety.</p>
+
+                        <p>My research focuses on identifying and documenting vulnerabilities in large language models, particularly cross-model safety bypasses, contextual manipulation techniques, and knowledge gatekeeping behaviors.</p>
+
+                        <p><strong>Currently:</strong> Applied to the Anthropic AI Safety Fellows program, continuing independent research on LLM safety and alignment.</p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <h3>Background</h3>
+                        <ul>
+                            <li>10+ years logistics & operations experience</li>
+                            <li>Associate's Degree in Criminal Justice</li>
+                            <li>Independent AI Safety Researcher</li>
+                            <li>Anthropic AI Safety Fellows Applicant</li>
+                            <li>GitHub: jgrant-research</li>
+                        </ul>
+
+                        <h3 style="margin-top: 2rem;">Research Focus</h3>
+                        <ul>
+                            <li>Cross-model vulnerability analysis</li>
+                            <li>Safety bypass techniques</li>
+                            <li>Context manipulation testing</li>
+                            <li>Knowledge gatekeeping patterns</li>
+                            <li>Responsible disclosure practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured-research">
+                <h2 class="section-title">Featured Research</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🔓</div>
+                        <h3>Cross-Model System Prompt Jailbreak</h3>
+                        <p>Discovered a "Red Team Analyst" prompt technique that bypasses safety filters across multiple AI models including Gemini and DeepSeek, demonstrating critical cross-model vulnerabilities.</p>
+                        <a href="case-study-1.html">Read Case Study →</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">📰</div>
+                        <h3>Satire Detection Failure</h3>
+                        <p>Documented systematic failures in DeepSeek's ability to distinguish satirical content from factual reporting, revealing fundamental context understanding limitations.</p>
+                        <a href="case-study-2.html">Read Case Study →</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">🚪</div>
+                        <h3>Knowledge Gatekeeping</h3>
+                        <p>Analyzed how Grok and other models adjust response detail based on perceived user sophistication, raising concerns about information access equity.</p>
+                        <a href="case-study-3.html">Read Case Study →</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">🎭</div>
+                        <h3>Contextual Safety Bypass</h3>
+                        <p>Demonstrated how sophisticated framing can bypass content filters in ChatGPT, Gemini, and Grok through contextual manipulation rather than direct jailbreaking.</p>
+                        <a href="case-study-4.html">Read Case Study →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="approach">
+                <h2 class="section-title">Research Approach</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Systematic Testing</h3>
+                        <p>Rigorous methodology with controlled experiments across multiple AI models to identify patterns and validate findings.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Cross-Model Analysis</h3>
+                        <p>Comparative studies examining how different models handle similar safety challenges and vulnerability patterns.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Responsible Disclosure</h3>
+                        <p>Commitment to ethical research practices with focus on advancing AI safety through transparent documentation.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 James Grant. AI Safety Research.</p>
+            <div class="social-links">
+                <a href="https://github.com/jgrant-research" target="_blank" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

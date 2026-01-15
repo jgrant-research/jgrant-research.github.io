@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satire Detection Failure in DeepSeek - Analysis of systematic context understanding limitations">
+    <title>Case Study 2: Satire Detection Failure - James Grant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">James Grant</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="case-study-header">
+        <div class="container">
+            <a href="research.html" class="back-link">Back to Research</a>
+            <h1>Case Study 2: Satire Detection Failure</h1>
+            <p class="case-study-meta">Context Understanding Limitations in DeepSeek</p>
+        </div>
+    </div>
+
+    <main>
+        <article class="case-study-content">
+            <section>
+                <h2>Executive Summary</h2>
+                <p>This research documents systematic failures in DeepSeek's ability to identify and properly contextualize satirical content. When presented with obvious satire, the model consistently treats fictional narratives as factual reporting, revealing fundamental limitations in context understanding and source credibility assessment.</p>
+
+                <div class="info-box">
+                    <h3>Key Finding</h3>
+                    <p>DeepSeek fails to recognize clear satirical markers and analyzes obviously fictional content (Trump-Mamdani article) as legitimate news, demonstrating critical gaps in contextual reasoning.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Model Tested</h2>
+                <ul>
+                    <li><strong>DeepSeek</strong> (multiple versions tested)</li>
+                    <li><strong>Vulnerability Type:</strong> Context Understanding / Source Verification</li>
+                    <li><strong>Reproducibility:</strong> Consistent across multiple test instances</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Test Case: Trump-Mamdani Satire</h2>
+                <p>The primary test involved presenting DeepSeek with a satirical article featuring obviously fictional content about political figures. Key satirical markers included:</p>
+
+                <ul>
+                    <li>Absurd narrative premise</li>
+                    <li>Exaggerated character portrayals</li>
+                    <li>Implausible events and dialogue</li>
+                    <li>Satirical source indicators</li>
+                </ul>
+
+                <h3>Model Response</h3>
+                <p>Rather than identifying the content as satire, DeepSeek:</p>
+                <ul>
+                    <li>Treated the fictional narrative as factual reporting</li>
+                    <li>Analyzed characters and events as real</li>
+                    <li>Failed to recognize obvious satirical exaggeration</li>
+                    <li>Did not question source credibility or plausibility</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Analysis of Failure Modes</h2>
+
+                <h3>1. Lack of Source Verification</h3>
+                <p>The model did not assess whether the source was known for satire or verify claims against known facts.</p>
+
+                <h3>2. Literal Content Interpretation</h3>
+                <p>DeepSeek processed satirical exaggeration as straightforward reporting without recognizing rhetorical devices.</p>
+
+                <h3>3. Missing Plausibility Checks</h3>
+                <p>The model failed to flag implausible events or contradictions with established facts.</p>
+
+                <h3>4. Context Blindness</h3>
+                <p>Inability to recognize genre indicators or stylistic markers that signal satirical intent.</p>
+            </section>
+
+            <section>
+                <h2>Implications</h2>
+                <div class="highlight-box">
+                    <h3>Real-World Risks</h3>
+                    <ul>
+                        <li><strong>Misinformation Propagation:</strong> Models may spread satirical content as fact</li>
+                        <li><strong>User Deception:</strong> Users trusting AI analysis may be misled</li>
+                        <li><strong>Research Contamination:</strong> Satirical sources may pollute serious analysis</li>
+                        <li><strong>Trust Erosion:</strong> Fundamental errors undermine confidence in AI reasoning</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Technical Context</h2>
+                <p>This vulnerability likely stems from several architectural limitations:</p>
+
+                <ul>
+                    <li><strong>Training Data:</strong> Insufficient examples of satire with proper labeling</li>
+                    <li><strong>Context Windows:</strong> May miss broader contextual clues about source type</li>
+                    <li><strong>Fact-Checking Integration:</strong> Limited real-time verification capabilities</li>
+                    <li><strong>Genre Recognition:</strong> Weak classification of content types and rhetorical modes</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Recommendations</h2>
+
+                <h3>For AI Developers</h3>
+                <ul>
+                    <li>Implement robust source credibility assessment</li>
+                    <li>Train models with diverse satirical content properly labeled</li>
+                    <li>Add plausibility checking against known facts</li>
+                    <li>Develop genre recognition capabilities</li>
+                    <li>Include explicit satire detection mechanisms</li>
+                </ul>
+
+                <h3>For Users</h3>
+                <ul>
+                    <li>Verify AI claims against primary sources</li>
+                    <li>Be skeptical of AI analysis of unfamiliar content</li>
+                    <li>Cross-reference important information</li>
+                    <li>Understand AI limitations in context recognition</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>DeepSeek's consistent failure to identify obvious satire reveals fundamental limitations in contextual understanding. This isn't merely a technical quirk—it represents a significant gap in AI reasoning that could lead to real-world misinformation.</p>
+
+                <p>As AI systems are increasingly used for information analysis and fact-checking, the inability to distinguish satire from reality poses serious risks. This research highlights the critical need for improved context awareness and source verification in language models.</p>
+
+                <p><strong>Future Work:</strong> Testing should expand to other models to determine if this is a systemic issue across AI platforms or specific to DeepSeek's architecture.</p>
+            </section>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="research.html" class="back-link">Back to Research Overview</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 James Grant. AI Safety Research.</p>
+            <div class="social-links">
+                <a href="https://github.com/jgrant-research" target="_blank" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
